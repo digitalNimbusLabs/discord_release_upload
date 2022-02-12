@@ -1,5 +1,5 @@
 # action.yml
-name: 'Hello World'
+name: 'Publish Release to Discord'
 description: 'Greet someone and record the time'
 inputs:
   token:  # id of input
