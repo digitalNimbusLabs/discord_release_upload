@@ -12,4 +12,6 @@ WORKDIR /
 
 COPY release-upload.sh /release-upload.sh
 
+RUN chmod +x /release-upload.sh
+
 ENTRYPOINT ["/release-upload.sh"]
