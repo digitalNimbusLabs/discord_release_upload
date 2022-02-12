@@ -22,4 +22,4 @@ runs:
     - ${{ inputs.token }}
     - ${{ inputs.releaseurl }}
     - ${{ inputs.webhook }}
-    - ${{ inputs.webhook }}
+
