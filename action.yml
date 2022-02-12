@@ -11,6 +11,9 @@ inputs:
   webhook:
     description: 'webhook for the discord channel'
     required: true
+  tag:
+    description: 'tag name for the release'
+    required: true
 
 runs:
   using: 'docker'
@@ -18,4 +21,5 @@ runs:
   args:
     - ${{ inputs.token }}
     - ${{ inputs.releaseurl }}
+    - ${{ inputs.webhook }}
     - ${{ inputs.webhook }}
