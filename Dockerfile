@@ -10,6 +10,6 @@ RUN apt-get update; apt-get install curl -y
 
 WORKDIR /
 
-COPY *.* /
+COPY release-upload.sh /release-upload.sh
 
 ENTRYPOINT ["./release-upload.sh"]
