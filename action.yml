@@ -1,0 +1,21 @@
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  token:  # id of input
+    description: 'github PAT token'
+    required: true
+  releaseurl:  # id of input
+    description: 'url of the release to upload'
+    required: true
+  webhook:
+    description: 'webhook for the discord channel'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.token }}
+    - ${{ inputs.releaseurl }}
+    - ${{ inputs.webhook }}
